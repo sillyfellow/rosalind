@@ -17,3 +17,7 @@ def get_input_integers(count):
         raise "Input must be %d integers" % count
     return [int(x) for x in numbers]
 
+
+def print_dict(d):
+    for key, value in d.iteritems():
+        print key, value
