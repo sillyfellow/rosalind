@@ -21,3 +21,10 @@ def get_input_integers(count):
 def print_dict(d):
     for key, value in d.iteritems():
         print key, value
+
+
+def base_complement(c):
+    d = { 'A': 'T', 'C': 'G', 'G': 'C', 'T': 'A', 'a': 't', 'c': 'g', 'g': 'c', 't': 'a' }
+    return d[c]
+
+
