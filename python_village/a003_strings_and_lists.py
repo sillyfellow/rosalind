@@ -10,11 +10,7 @@ import rosalib
 
 def main():
     string = raw_input()
-    numbers = raw_input().split()
-    if len(numbers) != 4 or (not reduce(lambda x, y: rosalib.is_integer(x) and y, numbers, True)):
-        return
-
-    a, b, c, d = [int(x) for x in numbers]
+    a, b, c, d = rosalib.get_input_integers(4)
     if d > len(string):
         return
 

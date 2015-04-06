@@ -9,11 +9,7 @@
 import rosalib
 
 def main(limit):
-    a, b = raw_input().split()
-    if (not rosalib.is_integer(a)) or (not rosalib.is_integer(b)):
-        return
-    a = int(a)
-    b = int(b)
+    a, b = rosalib.get_input_integers(2)
     if a < limit and b < limit:
         print rosalib.hyopotenuse(a, b)
 
