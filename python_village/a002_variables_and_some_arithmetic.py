@@ -8,9 +8,6 @@
 
 import rosalib
 
-def hyopotenuse(a, b):
-    return (a * a) + (b * b)
-
 def main(limit):
     a, b = raw_input().split()
     if (not rosalib.is_integer(a)) or (not rosalib.is_integer(b)):
@@ -18,7 +15,7 @@ def main(limit):
     a = int(a)
     b = int(b)
     if a < limit and b < limit:
-        print hyopotenuse(a, b)
+        print rosalib.hyopotenuse(a, b)
 
 if __name__ == '__main__':
     main(1000)
