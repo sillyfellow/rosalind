@@ -28,7 +28,6 @@ def main(filename):
         d = count_dna_nucleotides(f.read())
         print_nucleotide_count(d)
 
-
 def Usage(name):
     print "Usage: %s <filename>" % name
 

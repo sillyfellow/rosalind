@@ -29,16 +29,9 @@ def main(filename):
         ##fspairs = dict([(x.strip(), next(lines).strip()) for x in lines])
         #print fspairs.values()
         fgcpairs = fasta_gc_contents(fspairs)
-        #print fgcpairs
         most_gc_contented = sorted(fgcpairs, key=lambda x: x[1])[-1]
         print most_gc_contented[0]
         print most_gc_contented[1]
-
-
-
-
-
-
 
 
 def Usage(name):
